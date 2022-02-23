@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Multi-Step Formular</title>
+	<link rel="stylesheet" type="text/css" href="./style.css">	
+</head>
+<body>
+	<form data-multi-step class="multi-step-form">
+    <div class="card" data-step>
+      <h3 class="step-title">1. Schritt</h3>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email">
+      </div>
+      <div class="form-group">
+        <label for="password">Passwort</label>
+        <input type="password" name="password" id="password">
+      </div>
+      <button type="button" data-next>Weiter</button>
+    </div>
+    <div class="card" data-step>
+      <h3 class="step-title">2. Schritt</h3>
+      <div class="form-group">
+        <label for="address">Adresse</label>
+        <input type="text" name="address" id="address">
+      </div>
+      <div class="form-group">
+        <label for="city">Stadt</label>
+        <input type="text" name="city" id="city">
+      </div>
+      <div class="form-group">
+        <label for="zipcode">PLZ</label>
+        <input type="text" name="zipcode" id="zipcode">
+      </div>
+      <button type="button" data-previous>Zurück</button>
+      <button type="button" data-next>Weiter</button>
+    </div>
+    <div class="card" data-step>
+      <h3 class="step-title">3. Schritt</h3>
+      <div class="form-group">
+        <label for="firstName">Vorname</label>
+        <input type="text" name="firstName" id="firstName">
+      </div>
+      <div class="form-group">
+        <label for="lastName">Nachname</label>
+        <input type="text" name="lastName" id="lastName">
+      </div>
+      <button type="button" data-previous>Zurück</button>
+      <button type="submit">Absenden</button>
+    </div>
+  </form>
+
+
+  <script src="./main.js"></script>
+</body>
+</html>
